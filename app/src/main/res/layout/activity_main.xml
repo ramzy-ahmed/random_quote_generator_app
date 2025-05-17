@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageQuote"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/outline_format_quote_white_48"
+        android:fontFamily="@font/poppins_bold"
+        android:backgroundTint="@android:color/transparent"
+        app:tint="#F4A261"
+        android:contentDescription="new quote"
+        app:layout_constraintBottom_toTopOf="@id/quoteTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/quoteTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Click the button to get a quote"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/playfair_display"
+        app:layout_constraintBottom_toTopOf="@+id/authorTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Author"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="18sp"
+        android:textColor="#F4A261"
+        android:textAlignment="center"
+        android:textStyle="normal"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toTopOf="@id/shareButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/newQuoteButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="12dp"
+        android:src="@drawable/arrow_next"
+        android:background="@drawable/button_hover"
+        android:fontFamily="@font/poppins_bold"
+        android:backgroundTint="#F4A261"
+        app:tint="#1b1f3b"
+        android:contentDescription="new quote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/button_hover"
+        android:src="@drawable/share"
+        android:backgroundTint="#2A9D8f"
+        android:contentDescription="share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="#ffffff" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
