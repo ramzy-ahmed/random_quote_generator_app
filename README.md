@@ -20,6 +20,7 @@ A clean and interactive quote app that displays random motivational or thoughtfu
   <img src="Screenshot/screen1.jpg" width="240"/>
   <img src="Screenshot/screen2.jpg" width="240"/>
 </p>
+
 ---
 
 🧰 Tech Stack
